@@ -10,8 +10,8 @@ For this backend assignment, I made a small PHP program for registering users an
 - Check if the email address is valid.
 - Check if the email is already registered.
 - Ask the user to enter the password twice.
-- Hash the password with `password_hash()`.
-- Check the password with `password_verify()`.
+- Hash the password with `password_hash()`
+- Check the password with `password_verify()`
 - Save users in a JSON file.
 - Log in with an existing account.
 
@@ -29,13 +29,13 @@ Then choose if you want to register or log in and follow the instructions.
 
 ## Password hashing
 
-The program saves a password hash instead of the original password. PHP also uses a salt automatically when using `password_hash()`. This means that the same password can have different hashes.
+The program saves a password hash instead of the original password. PHP also uses a salt automatically when using `password_hash()` This means that the same password can have different hashes.
 
-You cannot normally get the original password back from the hash. To check a password, the program uses `password_verify()`.
+You cannot normally get the original password back from the hash. To check a password, the program uses `password_verify()`
 
 ## User data
 
-The user data is saved in `users.json`. I added this file to `.gitignore` so it will not be uploaded to GitHub.
+The user data is saved in `users.json` I added this file to `.gitignore` so it will not be uploaded to GitHub.
 
 ## What I learned
 
